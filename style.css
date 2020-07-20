@@ -1,0 +1,136 @@
+@font-face{
+    font-family: "futura";
+    src: url(futura_pt_book.ttf) format("truetype");
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: futura;
+}
+
+a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+:root{
+    --blue: #4D75FF;
+    --green: #26C568;
+}
+
+.logo{
+    width: 70px;
+}
+
+/*навигация*/
+nav{
+    display: grid;
+    grid-template-rows: minmax(min-content, 100px) min-content;
+    color: var(--green);
+}
+
+nav .content{
+    background-color: white;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    align-content: space-evenly;
+}
+
+nav .content .links{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    font-size: 17pt;
+}
+
+nav .content .menu{
+    display: none;
+}
+
+nav .dropdown{
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+
+nav .dropdown a{
+    padding: 10px;
+    border-bottom: 1px solid var(--green);
+}
+
+/*блок the best*/
+
+.description{
+    text-align: center;
+}
+
+.description_inside{
+    padding: 3vw 7vw;
+}
+
+.description_head{
+    color: var(--green);
+    margin-bottom: 10px;
+    font-size: 5vw;
+}
+
+.description_text{
+    color: var(--blue);
+    font-size: 3vw;
+}
+
+/*раздел about*/
+.about{
+    background-color: var(--blue);
+}
+
+.about_text{
+    color: white;
+    font-size: 2vw;
+}
+
+.head{
+    text-align: center;
+    color: var(--green);
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+.about_container{
+    padding: 3vw 7vw;
+}
+
+.about_inside{
+    margin-bottom: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.about_photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.photo{
+    width: 100px;
+}
+
+@media only screen and (max-width:768px){
+    nav .content .menu{
+        display: initial;
+        cursor: pointer;
+    }
+
+    nav .content .links{
+        display: none;
+    }
+}
