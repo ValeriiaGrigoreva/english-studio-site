@@ -123,6 +123,34 @@ nav .dropdown a{
     width: 20vw;
 }
 
+/*раздел курсы*/
+.courses{
+    background-color: white;
+}
+
+.courses_container{
+    padding: 3vw 7vw;
+}
+
+.courses_list{
+    text-align: center;
+    list-style: none;
+}
+
+.courses_item{
+    margin-bottom: 15px;
+}
+
+.item_head{
+    color: var(--blue);
+    font-size: 3vw;
+}
+
+.item_text{
+    color: var(--green);
+    font-size: 2vw;
+}
+
 @media only screen and (max-width:768px){
     nav .content .menu{
         display: initial;
