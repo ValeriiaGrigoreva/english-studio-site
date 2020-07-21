@@ -138,7 +138,7 @@ nav .dropdown a{
 }
 
 .courses_item{
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
 }
 
 .item_head{
@@ -148,6 +148,37 @@ nav .dropdown a{
 
 .item_text{
     color: var(--green);
+    font-size: 2vw;
+}
+
+/*блок стоимость*/
+.prices{
+    background-color: var(--blue);
+}
+
+.prices_container{
+    padding: 3vw 7vw;
+}
+
+table{
+    margin: 0 auto;
+    color: white;
+    border-collapse: collapse;
+}
+
+table, tr, td{
+    border: 2px solid var(--green);
+}
+
+td{
+    padding: 1vw;
+}
+
+thead{
+    font-size: 3vw;
+}
+
+tbody{
     font-size: 2vw;
 }
 
