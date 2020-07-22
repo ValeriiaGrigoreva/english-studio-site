@@ -123,8 +123,8 @@ nav .dropdown a{
     width: 20vw;
 }
 
-/*раздел курсы*/
-.courses{
+/*раздел курсы и преимущества*/
+.courses, .advantages{
     background-color: white;
 }
 
@@ -132,12 +132,12 @@ nav .dropdown a{
     padding: 3vw 7vw;
 }
 
-.courses_list{
+.courses_list, .advantages_list{
     text-align: center;
     list-style: none;
 }
 
-.courses_item{
+.courses_item, .advantages_item{
     margin-bottom: 1vw;
 }
 
@@ -149,6 +149,15 @@ nav .dropdown a{
 .item_text{
     color: var(--green);
     font-size: 2vw;
+}
+
+.advantages_item{
+    font-size: 2vw;
+    color: var(--blue);
+}
+
+.advantages_container{
+    padding: 3vw 12vw;
 }
 
 /*блок стоимость*/
@@ -167,7 +176,7 @@ table{
 }
 
 table, tr, td{
-    border: 2px solid var(--green);
+    border: 1.5px solid var(--green);
 }
 
 td{
@@ -181,6 +190,23 @@ thead{
 tbody{
     font-size: 2vw;
 }
+
+/*блок контакты*/
+.contacts{
+    background-color: var(--blue);
+}
+
+.contacts_container{
+    padding: 3vw 7vw;
+    text-align: center;
+}
+
+.contacts_text{
+    color: white;
+    font-size: 2vw;
+}
+
+
 
 @media only screen and (max-width:768px){
     nav .content .menu{
@@ -201,5 +227,9 @@ tbody{
     .about_text{
         margin-right: 0px;
         margin-bottom: 15px;
+    }
+
+    .logo{
+        width: 50px;
     }
 }
